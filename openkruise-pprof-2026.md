@@ -7,9 +7,9 @@
 | **Fixed** | [v1.9.2](https://github.com/openkruise/kruise/releases/tag/v1.9.2) (2026-10-19) |
 | **Author** | Tom Mitelman, Orca Security |
 | **Date** | 2026-11-02 |
-| **CVE ID** | pending (CERT/CC VU#742684) |
+| **CVE ID** | [CVE-2026-120656](https://www.cve.org/CVERecord?id=CVE-2026-120656) (CERT/CC VU#742684) |
 | **Severity** | High: any pod on the cluster network can take down the OpenKruise admission webhooks and block pod creation cluster-wide, with no credentials |
-| **CWE** | [CWE-306](https://cwe.mitre.org/data/definitions/306.html) Missing Authentication for Critical Function |
+| **CWE** | [CWE-306](https://cwe.mitre.org/data/definitions/306.html) Missing Authentication for Critical Function (root cause), [CWE-400](https://cwe.mitre.org/data/definitions/400.html) Uncontrolled Resource Consumption (impact) |
 
 ## 1. Summary
 
@@ -45,6 +45,7 @@ From any pod that can reach the kruise-manager pod IP on port 8090, with no Kube
 - 2026-10-19: v1.9.2 released
 - 2026-11-02: CERT/CC case VU#742684 opened for CVE assignment
 - 2026-11-02: this advisory published
+- 2026-11-02: CVE-2026-120656 assigned by CERT/CC
 
 ## 6. References
 
